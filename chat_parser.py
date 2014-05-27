@@ -19,7 +19,7 @@ def parse_chat(message):
     if mentions:
         output["mentions"] = mentions
 
-    emoticons = re.findall(r"(?:^|\s)\(([^)]+)", message)
+    emoticons = re.findall(r"(?:^|\s)\(([^)]{0,15})\)", message)
     if emoticons:
         output["emoticons"] = emoticons
 
