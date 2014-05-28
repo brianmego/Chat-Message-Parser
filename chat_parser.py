@@ -44,7 +44,7 @@ def parse_args():
     '''Defines command line arguments and parses them into variables'''
 
     parser = argparse.ArgumentParser(
-        description="Runs either a jobs or a schedule script")
+        description="Parses chat into relevant metadata")
 
     parser.add_argument('chat', help="Chat String (ex. '@brian sup dog?')")
 
